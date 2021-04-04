@@ -78,7 +78,7 @@ class ChartComponent extends Component {
                     </LineChart> */}
 
                     <AreaChart
-                        width={1280}
+                        width={1600}
                         height={720}
                         data={this.state.records}
                         margin={{
@@ -89,8 +89,8 @@ class ChartComponent extends Component {
                         }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="date" />
-                        <YAxis />
+                        <XAxis dataKey="date" fontSize="15" />
+                        <YAxis fontSize="20" />
                         <Tooltip />
                         <Area type="monotone" dataKey="count" stroke="#317df7" fill="#317df7" />
                     </AreaChart>
@@ -102,12 +102,12 @@ class ChartComponent extends Component {
 
     launchUpdates() {
         setInterval(async () => {
-            var resp = await axios.get("http://localhost:9085/records");
+            var resp = await axios.get("https://v9s1jkzlu3.execute-api.ap-south-1.amazonaws.com/staging/records");
             await this.setState({
                 records: resp.data
             });
             // console.log(resp.data)
-        }, 5 * 50 * 1000);
+        }, 5 * 60 * 1000); // 5 minutes timeout
     }
 }
 

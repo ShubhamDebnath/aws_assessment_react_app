@@ -1,3 +1,10 @@
+This Repo is for the react-js app code
+which has a simple area / line chart visualizing a bunch of random data
+The random data is polled from an lambda rest api backend created in other repo using a simple GET request every 5 mins
+
+I could build this code and host somewhere, but running development server is much easier and faster for now
+Also don't want to pay for hosting charges
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

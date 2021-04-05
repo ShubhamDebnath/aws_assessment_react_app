@@ -5,7 +5,7 @@ The random data is polled from an lambda rest api backend created in other repo 
 I could build this code and host somewhere, but running development server is much easier and faster for now
 Also don't want to pay for hosting charges
 
-!(react-app)[https://github.com/ShubhamDebnath/aws_assessment_react_app/blob/main/react-app.JPG]
+![react-app](https://github.com/ShubhamDebnath/aws_assessment_react_app/blob/main/react-app.JPG)
 
 # Getting Started with Create React App
 

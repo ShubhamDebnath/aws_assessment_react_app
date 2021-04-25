@@ -102,7 +102,7 @@ class ChartComponent extends Component {
 
     launchUpdates() {
         setInterval(async () => {
-            var resp = await axios.get("https://v9s1jkzlu3.execute-api.ap-south-1.amazonaws.com/staging/records");
+            var resp = await axios.get("https://00se4892sc.execute-api.ap-south-1.amazonaws.com/staging/records");
             await this.setState({
                 records: resp.data
             });
